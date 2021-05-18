@@ -22,25 +22,21 @@ A simple game for learning the korean alphabet hangul.
 - Electron
 - React
 
-
 ## Features
+### Essential features
 - List of hangul characters with their romanized counterparts
 - Ability to choose which characters to practice
 - Predefined sets of characters to practice
-- Random order of characters
+- Order of characters randomized each game
 - Instant feedback on wrong answers
 - Continuously try a question until correct answer
 - Speed mode (no need to press enter after inputting an answer)
 - Results screen
-- Continuous play (never ending!)
-- Personal high scores
-- Showcase problem characters (show incorrectly romanized characters multiple times)
-
-### Essential features
-...
 
 ### Nonessential features
-...
+- Personal high scores
+- Showcase problem characters (show incorrectly romanized characters multiple times)
+- Continuous play (never ending!)
 
 ## Diagrams
 ...
