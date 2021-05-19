@@ -1,12 +1,6 @@
 # HangulTrainer
 ## Description
 A simple game for learning the korean alphabet hangul.
-0. Practice the info sheet showing every hangul character a long side it's romanized version.
-1. Choose which characters to practice. 
-2. Type the romanized version of whichever(randomised) character shows up.
-    2. Try until you get it correct.
-3. Examine your results.
-4. Take another look at the info sheet and try again.
 
 ## Hangul info
 24 basic letters: 
@@ -38,8 +32,25 @@ A simple game for learning the korean alphabet hangul.
 - Showcase problem characters (show incorrectly romanized characters multiple times)
 - Continuous play (never ending!)
 
-## Diagrams
-...
+## Product Backlog
+### User story: Memory practice
+#### Story
+As a Player,
 
-## Timeline
-...
+I want to try to memorize the romanized version of the hangul characters before playing the game,
+
+So that I do not have to guess on every question
+#### Acceptance Criterion 1
+Given that the player is not playing the game
+
+When the player clicks the Practice button
+
+Then present the player with every hangul character
+- And their romanized counterpart
+#### Acceptance Criterion 2
+Given that the player is playing the game
+
+When the player clicks the Practice button
+
+Then end the game
+- And continue with 'Acceptance Criterion 2':'Then'
