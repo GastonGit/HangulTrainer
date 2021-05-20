@@ -54,3 +54,66 @@ When the player clicks the Practice button
 
 Then end the game
 - And continue with 'Acceptance Criterion 2':'Then'
+### User story: Random order
+#### Story
+As a Player,
+
+I want the order of which the characters shown in the game to be random
+
+So that every game is unique
+- And I learn the characters and not just memorize the order
+#### Acceptance Criterion 1
+Given that the player plays the game with some or all characters
+
+When the game is about to start
+
+Then randomize the order of characters to be shown
+### User story: Game Results
+#### Story
+As a Player,
+
+I want to see my results after the game,
+
+So that I know how many answers I got correct
+#### Acceptance Criterion 1
+Given the player just completed a game,
+
+When the game ends,
+
+Then show (Correct answers)/(Amount of questions) for that game
+### User story: Instant feedback
+#### Story
+As a Player,
+
+I want to know when I answer a question correctly or incorrectly,
+
+So that I can learn the characters
+- And improve at the game
+#### Acceptance Criterion 1
+Given that the player is playing the game,
+
+When the player answers a question incorrectly,
+
+Then display a red cross
+#### Acceptance Criterion 2
+Given that the player is playing the game,
+
+When the player answers a question correctly,
+
+Then display a green checkmark
+### User story: Unlimited tries
+#### Story
+As a Player,
+
+I want to able to guess characters that I do not know,
+
+So that I can learn those characters
+#### Acceptance Criterion 1
+Given that the player is playing the game,
+
+When the player answers a question incorrectly,
+
+Then let the player answer again,
+- And count the current question as incorrect for the results
+- And display a blue checkmark when the player finally answers the question correctly
+- And allow the player to reset game if they cannot guess correctly 
