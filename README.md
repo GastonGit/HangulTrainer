@@ -33,6 +33,8 @@ A simple game for learning the korean alphabet hangul.
 - Continuous play (never ending!)
 
 ## Product Backlog
+
+
 ### User story: Memory practice
 #### Story
 As a Player,
@@ -54,6 +56,8 @@ When the player clicks the Practice button
 
 Then end the game
 - And continue with 'Acceptance Criterion 2':'Then'
+
+
 ### User story: Random order
 #### Story
 As a Player,
@@ -68,6 +72,8 @@ Given that the player plays the game with some or all characters
 When the game is about to start
 
 Then randomize the order of characters to be shown
+
+
 ### User story: Game Results
 #### Story
 As a Player,
@@ -81,6 +87,8 @@ Given the player just completed a game,
 When the game ends,
 
 Then show (Correct answers)/(Amount of questions) for that game
+
+
 ### User story: Instant feedback
 #### Story
 As a Player,
@@ -101,6 +109,8 @@ Given that the player is playing the game,
 When the player answers a question correctly,
 
 Then display a green checkmark
+
+
 ### User story: Unlimited tries
 #### Story
 As a Player,
@@ -117,3 +127,35 @@ Then let the player answer again,
 - And count the current question as incorrect for the results
 - And display a blue checkmark when the player finally answers the question correctly
 - And allow the player to reset game if they cannot guess correctly 
+
+
+### User story: Practice characters
+#### Story
+As a new Player,
+
+I want to choose which characters to practice,
+
+So that I do not get overwhelmed
+#### Acceptance Criterion 1
+Given that the player is not playing the game,
+
+When player selects a character or group of characters,
+
+Then disable/enable that/those characters for the game
+
+
+### User story: Predefined practice groups
+#### Story
+As a Player,
+
+I want predefined groups of characters,
+
+So that I do not have to think about which characters to practice
+- And I can easily make the game harder or easier
+#### Acceptance Criterion 1
+Given that the player is not playing the game,
+
+When the player selects a predefined practice group,
+
+Then start the game
+- And only use the characters from the selected predefined group 
