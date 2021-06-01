@@ -29,7 +29,7 @@ A simple game for learning the korean alphabet hangul.
 
 ### Nonessential features
 - Personal high scores
-- Showcase problem characters (show incorrectly romanized characters multiple times)
+- Showcase problem characters (show incorrectly answered questions again in the same game)
 - Continuous play (never ending!)
 
 ## Product Backlog
