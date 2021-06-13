@@ -159,3 +159,20 @@ When the player selects a predefined practice group,
 
 Then start the game
 - And only use the characters from the selected predefined group 
+
+
+### User story: Speed mode
+#### Story
+As a Player,
+
+I want to move to the next question immediately after inputting a correct answer,
+
+So that I do not have to press enter after every answer
+#### Acceptance Criterion 1
+Given that the player is playing the game,
+
+When the player inputs a possible answer(a romanized word),
+
+Then show feedback
+- And move to the next question if the answer is correct
+- And if incorrect, when the player starts typing a new word, empty the input field.  
