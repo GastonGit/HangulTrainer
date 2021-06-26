@@ -1,7 +1,7 @@
 {
-  "name": "electron-react-boilerplate",
-  "productName": "ElectronReact",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Fast Refresh for rapid application development",
+  "name": "hangul-trainer",
+  "productName": "HangulTrainer",
+  "description": "A simple application for learning the korean alphabet: Hangul",
   "scripts": {
     "build": "concurrently \"yarn build:main\" \"yarn build:renderer\"",
     "build:main": "cross-env NODE_ENV=production webpack --config ./.erb/configs/webpack.config.main.prod.babel.js",
@@ -30,7 +30,7 @@
     ]
   },
   "build": {
-    "productName": "ElectronReact",
+    "productName": "HangulTrainer",
     "appId": "org.erb.ElectronReact",
     "files": [
       "dist/",
