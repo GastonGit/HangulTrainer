@@ -1,14 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './App.global.css';
+import Practice from './components/Practice';
 
 const Menu = () => {
   return (
     <div>
       <div className="Menu">
-        <a href="#!">
+        <Link to="/practice">
           <button type="button">Practice</button>
-        </a>
+        </Link>
       </div>
     </div>
   );
@@ -18,7 +19,12 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={Menu} />
+        <Route exact path="/">
+          <Menu />
+        </Route>
+        <Route path="/practice">
+          <Practice />
+        </Route>
       </Switch>
     </Router>
   );
