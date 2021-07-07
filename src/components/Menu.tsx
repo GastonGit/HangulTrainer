@@ -5,7 +5,7 @@ const Menu = () => {
   return (
     <div>
       <div className="Menu-Button">
-        <Link to="/">
+        <Link to="/play">
           <button type="button">Play</button>
         </Link>
       </div>
@@ -15,7 +15,7 @@ const Menu = () => {
         </Link>
       </div>
       <div className="Menu-Button">
-        <Link to="/">
+        <Link to="/options">
           <button type="button">Options</button>
         </Link>
       </div>
