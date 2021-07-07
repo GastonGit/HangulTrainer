@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Menu = () => {
   return (
     <div>
-      <div className="Menu">
+      <div className="Menu-Button">
         <Link to="/practice">
           <button type="button">Practice</button>
         </Link>

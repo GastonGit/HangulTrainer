@@ -5,7 +5,7 @@ import hangulChart from '../../assets/hangul-chart.png';
 const Practice = () => {
   return (
     <div>
-      <div className="Menu">
+      <div className="Menu-Button">
         <Link to="/">
           <button type="button">Menu</button>
         </Link>

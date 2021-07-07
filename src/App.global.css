@@ -52,7 +52,7 @@ a:hover {
   text-decoration: none;
 }
 
-.Menu {
+.Menu-Button {
   display: flex;
   justify-content: center;
   align-items: center;
