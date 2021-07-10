@@ -1,0 +1,248 @@
+[
+  {
+    "id": 1,
+    "hangul": "ㄱ",
+    "romanization": "g/k",
+    "pronunciation": ""
+  },
+  {
+    "id": 2,
+    "hangul": "ㄴ",
+    "romanization": "n",
+    "pronunciation": ""
+  },
+  {
+    "id": 3,
+    "hangul": "ㄷ",
+    "romanization": "d/t",
+    "pronunciation": ""
+  },
+  {
+    "id": 4,
+    "hangul": "ㄹ",
+    "romanization": "r/l",
+    "pronunciation": ""
+  },
+  {
+    "id": 5,
+    "hangul": "ㅁ",
+    "romanization": "m",
+    "pronunciation": ""
+  },
+  {
+    "id": 6,
+    "hangul": "ㅂ",
+    "romanization": "b/p",
+    "pronunciation": ""
+  },
+  {
+    "id": 7,
+    "hangul": "ㅅ",
+    "romanization": "s/t",
+    "pronunciation": ""
+  },
+  {
+    "id": 8,
+    "hangul": "ㄱ",
+    "romanization": "j/t/ch",
+    "pronunciation": ""
+  },
+  {
+    "id": 9,
+    "hangul": "ㅇ",
+    "romanization": "-/ng",
+    "pronunciation": ""
+  },
+  {
+    "id": 10,
+    "hangul": "ㅌ",
+    "romanization": "t",
+    "pronunciation": ""
+  },
+  {
+    "id": 11,
+    "hangul": "ㄸ",
+    "romanization": "dd/tt",
+    "pronunciation": ""
+  },
+  {
+    "id": 12,
+    "hangul": "ㅆ",
+    "romanization": "ss/tt",
+    "pronunciation": ""
+  },
+  {
+    "id": 13,
+    "hangul": "ㅉ",
+    "romanization": "jj",
+    "pronunciation": ""
+  },
+  {
+    "id": 14,
+    "hangul": "ㅃ",
+    "romanization": "bb",
+    "pronunciation": ""
+  },
+  {
+    "id": 15,
+    "hangul": "ㄲ",
+    "romanization": "kk",
+    "pronunciation": ""
+  },
+  {
+    "id": 16,
+    "hangul": "ㅊ",
+    "romanization": "ch/t",
+    "pronunciation": ""
+  },
+  {
+    "id": 17,
+    "hangul": "ㅋ",
+    "romanization": "k/k",
+    "pronunciation": ""
+  },
+  {
+    "id": 18,
+    "hangul": "ㅌ",
+    "romanization": "t/t",
+    "pronunciation": ""
+  },
+  {
+    "id": 19,
+    "hangul": "ㅍ",
+    "romanization": "p/p",
+    "pronunciation": ""
+  },
+  {
+    "id": 20,
+    "hangul": "ㅎ",
+    "romanization": "h",
+    "pronunciation": ""
+  },
+  {
+    "id": 21,
+    "hangul": "ㅣ",
+    "romanization": "i",
+    "pronunciation": "bEE"
+  },
+  {
+    "id": 22,
+    "hangul": "ㅏ",
+    "romanization": "a",
+    "pronunciation": "bAch"
+  },
+  {
+    "id": 23,
+    "hangul": "ㅓ",
+    "romanization": "uh/eo",
+    "pronunciation": "gUt"
+  },
+  {
+    "id": 24,
+    "hangul": "ㅡ",
+    "romanization": "eu",
+    "pronunciation": "ugh"
+  },
+  {
+    "id": 25,
+    "hangul": "ㅜ",
+    "romanization": "u/w",
+    "pronunciation": "bOO"
+  },
+  {
+    "id": 26,
+    "hangul": "ㅗ",
+    "romanization": "o/w",
+    "pronunciation": "gO"
+  },
+  {
+    "id": 27,
+    "hangul": "ㅑ",
+    "romanization": "ya",
+    "pronunciation": ""
+  },
+  {
+    "id": 28,
+    "hangul": "ㅕ",
+    "romanization": "yeo",
+    "pronunciation": ""
+  },
+  {
+    "id": 29,
+    "hangul": "ㅠ",
+    "romanization": "yu",
+    "pronunciation": ""
+  },
+  {
+    "id": 30,
+    "hangul": "ㅛ",
+    "romanization": "yo",
+    "pronunciation": ""
+  },
+  {
+    "id": 31,
+    "hangul": "ㅐ",
+    "romanization": "ae",
+    "pronunciation": "bEd"
+  },
+  {
+    "id": 32,
+    "hangul": "ㅔ",
+    "romanization": "e",
+    "pronunciation": "bEd"
+  },
+  {
+    "id": 33,
+    "hangul": "ㅢ",
+    "romanization": "ui",
+    "pronunciation": "we"
+  },
+  {
+    "id": 34,
+    "hangul": "ㅒ",
+    "romanization": "yae",
+    "pronunciation": "bEd"
+  },
+  {
+    "id": 35,
+    "hangul": "ㅖ",
+    "romanization": "ye",
+    "pronunciation": "bEd"
+  },
+  {
+    "id": 36,
+    "hangul": "ㅘ",
+    "romanization": "wa",
+    "pronunciation": ""
+  },
+  {
+    "id": 37,
+    "hangul": "ㅙ",
+    "romanization": "wae",
+    "pronunciation": ""
+  },
+  {
+    "id": 38,
+    "hangul": "ㅚ",
+    "romanization": "oe",
+    "pronunciation": "we"
+  },
+  {
+    "id": 39,
+    "hangul": "ㅝ",
+    "romanization": "wo",
+    "pronunciation": "wa"
+  },
+  {
+    "id": 40,
+    "hangul": "ㅞ",
+    "romanization": "we",
+    "pronunciation": ""
+  },
+  {
+    "id": 41,
+    "hangul": "ㅟ",
+    "romanization": "wi",
+    "pronunciation": ""
+  }
+]
