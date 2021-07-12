@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PlayGame from '../lib/PlayGame';
 
 const playGame = new PlayGame();
@@ -50,11 +49,6 @@ class Play extends React.Component<unknown, PlayState> {
           </label>
           <input type="submit" value="Submit" />
         </form>
-        <div className="Menu-Button">
-          <Link to="/">
-            <button type="button">Menu</button>
-          </Link>
-        </div>
       </div>
     );
   }

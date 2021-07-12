@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Menu = () => {
   return (
-    <div>
+    <div className="Menu-Buttons">
       <div className="Menu-Button">
         <Link to="/play">
           <button type="button">Play</button>
