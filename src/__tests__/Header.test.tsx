@@ -2,14 +2,14 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 import { HashRouter } from 'react-router-dom';
-import Menu from '../components/Menu';
+import Header from '../components/Header';
 
-describe('Menu', () => {
+describe('Header', () => {
   it('should render', () => {
     expect(
       render(
         <HashRouter>
-          <Menu />
+          <Header />
         </HashRouter>
       )
     ).toBeTruthy();

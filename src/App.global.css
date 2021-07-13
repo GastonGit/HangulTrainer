@@ -52,14 +52,14 @@ a:hover {
   text-decoration: none;
 }
 
-.Menu-Button {
+.Header-Button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
 }
 
-.Menu-Buttons {
+.Header {
   display: flex;
   flex-direction: row;
 }

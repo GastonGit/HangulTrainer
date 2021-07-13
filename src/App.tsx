@@ -2,7 +2,7 @@ import React from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.global.css';
 import Practice from './components/Practice';
-import Menu from './components/Menu';
+import Header from './components/Header';
 import Play from './components/Play';
 import Options from './components/Options';
 
@@ -11,7 +11,7 @@ export default function App() {
     <div>
       <Router>
         <Route path="/">
-          <Menu />
+          <Header />
         </Route>
         <Switch>
           <Route path="/play">

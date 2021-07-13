@@ -1,20 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Menu = () => {
+const Header = () => {
   return (
-    <div className="Menu-Buttons">
-      <div className="Menu-Button">
+    <div className="Header">
+      <div className="Header-Button">
         <Link to="/play">
           <button type="button">Play</button>
         </Link>
       </div>
-      <div className="Menu-Button">
+      <div className="Header-Button">
         <Link to="/practice">
           <button type="button">Practice</button>
         </Link>
       </div>
-      <div className="Menu-Button">
+      <div className="Header-Button">
         <Link to="/options">
           <button type="button">Options</button>
         </Link>
@@ -23,4 +23,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default Header;
