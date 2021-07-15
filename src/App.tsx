@@ -8,21 +8,25 @@ import Options from './components/Options';
 
 export default function App() {
   return (
-    <div>
+    <div className="App">
       <Router>
         <Route path="/">
-          <Header />
+          <div className="HeaderContent">
+            <Header />
+          </div>
         </Route>
         <Switch>
-          <Route path="/play">
-            <Play />
-          </Route>
-          <Route path="/practice">
-            <Practice />
-          </Route>
-          <Route path="/options">
-            <Options />
-          </Route>
+          <div className="BodyContent">
+            <Route path="/play">
+              <Play />
+            </Route>
+            <Route path="/practice">
+              <Practice />
+            </Route>
+            <Route path="/options">
+              <Options />
+            </Route>
+          </div>
         </Switch>
       </Router>
     </div>
