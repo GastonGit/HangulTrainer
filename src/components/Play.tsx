@@ -37,9 +37,9 @@ class Play extends React.Component<unknown, PlayState> {
 
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="answer">
-            {currentHangul}
+        <form onSubmit={this.handleSubmit} className="PlayContent">
+          <label htmlFor="answer" className="LabelContent">
+            <p className="CurrentHangul">{currentHangul}</p>
             <input
               type="text"
               id="answer"
@@ -47,7 +47,7 @@ class Play extends React.Component<unknown, PlayState> {
               onChange={this.handleChange}
             />
           </label>
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" className="PlaySubmitButton" />
         </form>
       </div>
     );
