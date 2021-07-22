@@ -20,6 +20,14 @@ class PlayGame {
     this.currentCharacter = this.list[this.currentIndex];
   }
 
+  getCurrentQuestionCount() {
+    return this.currentIndex + 1;
+  }
+
+  getFullQuestionCount() {
+    return this.list.length;
+  }
+
   getCurrentHangul() {
     return this.currentCharacter.hangul;
   }
