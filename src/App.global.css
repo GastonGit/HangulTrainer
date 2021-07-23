@@ -116,3 +116,21 @@ a:hover {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+.PlayFeedbackContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 24px;
+}
+
+.PlayFeedbackContainer img {
+  object-fit: contain;
+  width: 24px;
+}
+
+.PlayContainer {
+  width: 177px;
+  max-width: 177px;
+}

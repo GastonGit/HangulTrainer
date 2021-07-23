@@ -36,7 +36,10 @@ class PlayGame {
     if (input === this.currentCharacter.romanization) {
       this.currentIndex += 1;
       this.currentCharacter = this.list[this.currentIndex];
+
+      return true;
     }
+    return false;
   }
 }
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import PlayGame from '../lib/PlayGame';
 
+import redX from '../../assets/RedX.png';
+
 const playGame = new PlayGame();
 
 interface PlayState {
@@ -8,6 +10,7 @@ interface PlayState {
   value: string;
   currentQuestionCount: number;
   fullQuestionCount: number;
+  incorrectAnswer: boolean;
 }
 
 class Play extends React.Component<unknown, PlayState> {
@@ -18,6 +21,7 @@ class Play extends React.Component<unknown, PlayState> {
       value: '',
       currentQuestionCount: 0,
       fullQuestionCount: 0,
+      incorrectAnswer: false,
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -38,13 +42,20 @@ class Play extends React.Component<unknown, PlayState> {
 
   handleSubmit(event: { preventDefault: () => void }) {
     const { value } = this.state;
-    playGame.checkAnswer(value);
-    this.setState({
-      currentHangul: playGame.getCurrentHangul(),
-      value: '',
-      currentQuestionCount: playGame.getCurrentQuestionCount(),
-      fullQuestionCount: playGame.getFullQuestionCount(),
-    });
+    if (playGame.checkAnswer(value)) {
+      this.setState({
+        currentHangul: playGame.getCurrentHangul(),
+        value: '',
+        currentQuestionCount: playGame.getCurrentQuestionCount(),
+        fullQuestionCount: playGame.getFullQuestionCount(),
+        incorrectAnswer: false,
+      });
+    } else {
+      this.setState({
+        incorrectAnswer: true,
+      });
+    }
+
     event.preventDefault();
   }
 
@@ -54,14 +65,18 @@ class Play extends React.Component<unknown, PlayState> {
       value,
       currentQuestionCount,
       fullQuestionCount,
+      incorrectAnswer,
     } = this.state;
 
     return (
-      <div>
+      <div className="PlayContainer">
         <div className="PlayTitleContainer">
           <p>
             Question {currentQuestionCount} / {fullQuestionCount}
           </p>
+        </div>
+        <div className="PlayFeedbackContainer">
+          {incorrectAnswer && <img src={redX} alt="Incorrect answer" />}
         </div>
         <form onSubmit={this.handleSubmit} className="PlayContent">
           <label htmlFor="answer" className="LabelContent">
