@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade } from '@material-ui/core';
 import PlayGame from '../lib/PlayGame';
 
 import redX from '../../assets/RedX.png';
@@ -54,6 +55,10 @@ class Play extends React.Component<unknown, PlayState> {
       this.setState({
         incorrectAnswer: true,
       });
+
+      setTimeout(() => {
+        this.setState({ incorrectAnswer: false });
+      }, 1500);
     }
 
     event.preventDefault();
@@ -76,7 +81,9 @@ class Play extends React.Component<unknown, PlayState> {
           </p>
         </div>
         <div className="PlayFeedbackContainer">
-          {incorrectAnswer && <img src={redX} alt="Incorrect answer" />}
+          <Fade in={incorrectAnswer}>
+            <img src={redX} alt="Incorrect answer" />
+          </Fade>
         </div>
         <form onSubmit={this.handleSubmit} className="PlayContent">
           <label htmlFor="answer" className="LabelContent">
