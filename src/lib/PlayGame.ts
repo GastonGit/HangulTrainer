@@ -8,7 +8,7 @@ interface Character {
 }
 
 class PlayGame {
-  private readonly list: Array<Character>;
+  private list: Array<Character>;
 
   private currentIndex: number;
 
@@ -18,6 +18,10 @@ class PlayGame {
     this.list = JSON.parse(JSON.stringify(characters));
     this.currentIndex = 0;
     this.currentCharacter = this.list[this.currentIndex];
+  }
+
+  restartGame() {
+    this.list = JSON.parse(JSON.stringify(characters));
   }
 
   getCurrentQuestionCount() {
