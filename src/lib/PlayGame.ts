@@ -22,6 +22,8 @@ class PlayGame {
 
   restartGame() {
     this.list = JSON.parse(JSON.stringify(characters));
+    this.currentIndex = 0;
+    this.currentCharacter = this.list[this.currentIndex];
   }
 
   getCurrentQuestionCount() {
