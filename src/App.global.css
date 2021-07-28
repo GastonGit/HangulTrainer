@@ -134,3 +134,15 @@ a:hover {
   width: 177px;
   max-width: 177px;
 }
+
+.PlayRestartButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 60%;
+}
+
+.PlayRestartButtonContainer button {
+  height: 100%;
+  width: 100%;
+}

@@ -27,6 +27,7 @@ class Play extends React.Component<unknown, PlayState> {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.restartGame = this.restartGame.bind(this);
   }
 
   componentDidMount() {
@@ -64,6 +65,17 @@ class Play extends React.Component<unknown, PlayState> {
     event.preventDefault();
   }
 
+  restartGame() {
+    playGame.restartGame();
+    this.setState({
+      currentHangul: playGame.getCurrentHangul(),
+      value: '',
+      currentQuestionCount: playGame.getCurrentQuestionCount(),
+      fullQuestionCount: playGame.getFullQuestionCount(),
+      incorrectAnswer: false,
+    });
+  }
+
   render() {
     const {
       currentHangul,
@@ -75,6 +87,11 @@ class Play extends React.Component<unknown, PlayState> {
 
     return (
       <div className="PlayContainer">
+        <div className="PlayRestartButtonContainer">
+          <button type="button" onClick={this.restartGame}>
+            Restart
+          </button>
+        </div>
         <div className="PlayTitleContainer">
           <p>
             Question {currentQuestionCount} / {fullQuestionCount}
