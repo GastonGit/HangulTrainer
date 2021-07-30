@@ -28,6 +28,8 @@ class Play extends React.Component<unknown, PlayState> {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.restartGame = this.restartGame.bind(this);
+
+    this.restartGame();
   }
 
   componentDidMount() {
