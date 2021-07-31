@@ -15,8 +15,8 @@ export default function App() {
             <Header />
           </div>
         </Route>
-        <Switch>
-          <div className="BodyContent">
+        <div className="BodyContent">
+          <Switch>
             <Route path="/play">
               <Play />
             </Route>
@@ -26,8 +26,8 @@ export default function App() {
             <Route path="/options">
               <Options />
             </Route>
-          </div>
-        </Switch>
+          </Switch>
+        </div>
       </Router>
     </div>
   );
