@@ -5,17 +5,17 @@ const Header = () => {
   return (
     <div className="Header">
       <div className="Header-Button">
-        <Link to="/play">
+        <Link to="/play" draggable="false">
           <button type="button">Play</button>
         </Link>
       </div>
       <div className="Header-Button">
-        <Link to="/practice">
+        <Link to="/practice" draggable="false">
           <button type="button">Practice</button>
         </Link>
       </div>
       <div className="Header-Button">
-        <Link to="/options">
+        <Link to="/options" draggable="false">
           <button type="button">Options</button>
         </Link>
       </div>

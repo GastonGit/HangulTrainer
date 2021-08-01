@@ -84,6 +84,9 @@ a:hover {
   justify-content: center;
 }
 
+.Header-Button button {
+}
+
 .PlayContent {
   display: flex;
   flex-direction: column;
