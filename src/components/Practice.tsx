@@ -5,7 +5,7 @@ const Practice = () => {
   return (
     <div>
       <div className="Menu-Button">
-        <img src={hangulChart} alt="Hangul alphabet" />
+        <img src={hangulChart} alt="Hangul alphabet" draggable="false" />
       </div>
     </div>
   );
