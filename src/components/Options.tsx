@@ -1,7 +1,14 @@
 import React from 'react';
 
-const Options = () => {
-  return <div />;
-};
+class Options extends React.Component<unknown> {
+  constructor(props: unknown) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    return <div />;
+  }
+}
 
 export default Options;
