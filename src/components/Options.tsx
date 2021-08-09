@@ -15,6 +15,9 @@ class Options extends React.Component<unknown> {
     return (
       <div className="OptionList">
         <div className="OptionItem">
+          <div className="OptionTitle">
+            <p>Play mode</p>
+          </div>
           <form className="Option-PlayMode">
             <label htmlFor="mode1" className="">
               Mode 1

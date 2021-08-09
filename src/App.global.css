@@ -164,3 +164,14 @@ a:hover {
   align-items: flex-start;
   justify-content: center;
 }
+
+.OptionItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.OptionTitle {
+  font-size: 22px;
+}
