@@ -27,6 +27,10 @@ class PlayGame {
   checkAnswer(input: string) {
     return this.currentMode.checkAnswer(input);
   }
+
+  matchComplete() {
+    return this.currentMode.matchComplete();
+  }
 }
 
 export default PlayGame;

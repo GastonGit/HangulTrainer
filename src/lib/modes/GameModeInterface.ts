@@ -9,6 +9,7 @@ interface GameMode {
   getFullQuestionCount(): number;
   getCurrentHangul(): string;
   checkAnswer(input: string): boolean;
+  matchComplete(): boolean;
 }
 
 export default GameMode;

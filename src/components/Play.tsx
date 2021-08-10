@@ -46,13 +46,17 @@ class Play extends React.Component<unknown, PlayState> {
   handleSubmit(event: { preventDefault: () => void }) {
     const { value } = this.state;
     if (playGame.checkAnswer(value)) {
-      this.setState({
-        currentHangul: playGame.getCurrentHangul(),
-        value: '',
-        currentQuestionCount: playGame.getCurrentQuestionCount(),
-        fullQuestionCount: playGame.getFullQuestionCount(),
-        incorrectAnswer: false,
-      });
+      if (playGame.matchComplete()) {
+        this.restartGame();
+      } else {
+        this.setState({
+          currentHangul: playGame.getCurrentHangul(),
+          value: '',
+          currentQuestionCount: playGame.getCurrentQuestionCount(),
+          fullQuestionCount: playGame.getFullQuestionCount(),
+          incorrectAnswer: false,
+        });
+      }
     } else {
       this.setState({
         incorrectAnswer: true,

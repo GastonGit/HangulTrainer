@@ -49,6 +49,10 @@ class HangulMode2 implements GameMode {
     return this.currentCharacter.hangul;
   }
 
+  matchComplete() {
+    return !(this.currentIndex < this.list.length);
+  }
+
   checkAnswer(input: string) {
     if (input === this.currentCharacter.romanization) {
       this.currentIndex += 1;
