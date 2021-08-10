@@ -9,7 +9,17 @@ class Options extends React.Component<unknown> {
   }
 
   // eslint-disable-next-line class-methods-use-this
-  handleChange() {}
+  handleChange(event: { target: { value: string } }) {
+    switch (event.target.value) {
+      case 'mode1':
+      default:
+        localStorage.setItem('currentMode', 'mode1');
+        break;
+      case 'mode2':
+        localStorage.setItem('currentMode', 'mode2');
+        break;
+    }
+  }
 
   render() {
     return (
@@ -25,7 +35,7 @@ class Options extends React.Component<unknown> {
                 type="radio"
                 id="mode1"
                 name="playmode"
-                value="value"
+                value="mode1"
                 onChange={this.handleChange}
               />
             </label>
@@ -35,7 +45,7 @@ class Options extends React.Component<unknown> {
                 type="radio"
                 id="mode2"
                 name="playmode"
-                value="value"
+                value="mode2"
                 onChange={this.handleChange}
               />
             </label>

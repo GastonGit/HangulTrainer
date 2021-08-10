@@ -31,7 +31,7 @@ class Play extends React.Component<unknown, PlayState> {
   }
 
   componentDidMount() {
-    this.restartGame();
+    playGame.confirmMode();
     this.setState({
       currentHangul: playGame.getCurrentHangul(),
       currentQuestionCount: playGame.getCurrentQuestionCount(),
