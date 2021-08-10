@@ -1,51 +1,31 @@
-import characters from '../../assets/hangul-characters.json';
-
-interface Character {
-  id: number;
-  hangul: string;
-  romanization: string;
-  pronunciation: string;
-}
+import GameMode from './modes/GameModeInterface';
+import HangulMode1 from './modes/HangulMode1';
 
 class PlayGame {
-  private list: Array<Character>;
-
-  private currentIndex: number;
-
-  private currentCharacter: Character;
+  private currentMode: GameMode;
 
   constructor() {
-    this.list = JSON.parse(JSON.stringify(characters));
-    this.currentIndex = 0;
-    this.currentCharacter = this.list[this.currentIndex];
+    this.currentMode = new HangulMode1();
   }
 
   restartGame() {
-    this.list = JSON.parse(JSON.stringify(characters));
-    this.currentIndex = 0;
-    this.currentCharacter = this.list[this.currentIndex];
+    this.currentMode.restartGame();
   }
 
   getCurrentQuestionCount() {
-    return this.currentIndex + 1;
+    return this.currentMode.getCurrentQuestionCount();
   }
 
   getFullQuestionCount() {
-    return this.list.length;
+    return this.currentMode.getFullQuestionCount();
   }
 
   getCurrentHangul() {
-    return this.currentCharacter.hangul;
+    return this.currentMode.getCurrentHangul();
   }
 
   checkAnswer(input: string) {
-    if (input === this.currentCharacter.romanization) {
-      this.currentIndex += 1;
-      this.currentCharacter = this.list[this.currentIndex];
-
-      return true;
-    }
-    return false;
+    return this.currentMode.checkAnswer(input);
   }
 }
 
