@@ -1,14 +1,22 @@
 import React from 'react';
 import {
+  withStyles,
   FormControl,
   FormLabel,
   Radio,
   RadioGroup,
   FormControlLabel,
 } from '@material-ui/core/';
+import styles from '../styles/styleOptions';
 
-class Options extends React.Component<unknown> {
-  constructor(props: unknown) {
+interface IOptionsProps {
+  classes: {
+    label: string;
+  };
+}
+
+class Options extends React.Component<IOptionsProps> {
+  constructor(props: IOptionsProps) {
     super(props);
     this.state = {};
 
@@ -29,11 +37,15 @@ class Options extends React.Component<unknown> {
   }
 
   render() {
+    const { classes } = this.props;
+
     return (
       <div className="OptionList">
         <div className="OptionItem">
           <FormControl component="fieldset">
-            <FormLabel component="legend">Hangul Play modes</FormLabel>
+            <FormLabel component="legend" className={classes.label}>
+              Hangul Play modes
+            </FormLabel>
             <RadioGroup
               aria-label="hangul"
               name="hangulPlayMode"
@@ -44,13 +56,13 @@ class Options extends React.Component<unknown> {
                 value="mode1"
                 control={<Radio />}
                 label="Mode 1"
-                labelPlacement="start"
+                labelPlacement="end"
               />
               <FormControlLabel
                 value="mode2"
                 control={<Radio />}
                 label="Mode 2"
-                labelPlacement="start"
+                labelPlacement="end"
               />
             </RadioGroup>
           </FormControl>
@@ -60,4 +72,4 @@ class Options extends React.Component<unknown> {
   }
 }
 
-export default Options;
+export default withStyles(styles)(Options);
