@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+  FormControl,
+  FormLabel,
+  Radio,
+  RadioGroup,
+  FormControlLabel,
+} from '@material-ui/core/';
 
 class Options extends React.Component<unknown> {
   constructor(props: unknown) {
@@ -25,31 +32,28 @@ class Options extends React.Component<unknown> {
     return (
       <div className="OptionList">
         <div className="OptionItem">
-          <div className="OptionTitle">
-            <p>Play mode</p>
-          </div>
-          <form className="Option-PlayMode">
-            <label htmlFor="mode1" className="">
-              Mode 1
-              <input
-                type="radio"
-                id="mode1"
-                name="playmode"
+          <FormControl component="fieldset">
+            <FormLabel component="legend">Hangul Play modes</FormLabel>
+            <RadioGroup
+              aria-label="hangul"
+              name="hangulPlayMode"
+              className="Option-PlayMode"
+              onChange={this.handleChange}
+            >
+              <FormControlLabel
                 value="mode1"
-                onChange={this.handleChange}
+                control={<Radio />}
+                label="Mode 1"
+                labelPlacement="start"
               />
-            </label>
-            <label htmlFor="mode2" className="">
-              Mode 2
-              <input
-                type="radio"
-                id="mode2"
-                name="playmode"
+              <FormControlLabel
                 value="mode2"
-                onChange={this.handleChange}
+                control={<Radio />}
+                label="Mode 2"
+                labelPlacement="start"
               />
-            </label>
-          </form>
+            </RadioGroup>
+          </FormControl>
         </div>
       </div>
     );
