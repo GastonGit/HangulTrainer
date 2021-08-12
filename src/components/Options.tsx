@@ -12,6 +12,8 @@ import styles from '../styles/styleOptions';
 interface IOptionsProps {
   classes: {
     label: string;
+    list: string;
+    item: string;
   };
 }
 
@@ -40,8 +42,8 @@ class Options extends React.Component<IOptionsProps> {
     const { classes } = this.props;
 
     return (
-      <div className="OptionList">
-        <div className="OptionItem">
+      <div className={classes.list}>
+        <div className={classes.item}>
           <FormControl component="fieldset">
             <FormLabel component="legend" className={classes.label}>
               Hangul Play modes
@@ -49,7 +51,6 @@ class Options extends React.Component<IOptionsProps> {
             <RadioGroup
               aria-label="hangul"
               name="hangulPlayMode"
-              className="Option-PlayMode"
               onChange={this.handleChange}
             >
               <FormControlLabel
