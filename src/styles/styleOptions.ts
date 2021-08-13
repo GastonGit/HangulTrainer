@@ -3,6 +3,9 @@ import { createStyles } from '@material-ui/core';
 const styles = createStyles({
   label: {
     color: '#ffffff',
+    '&.Mui-focused': {
+      color: '#ffffff',
+    },
     fontSize: 30,
   },
   list: {
@@ -11,6 +14,7 @@ const styles = createStyles({
     display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'center',
+    userSelect: 'none',
   },
   item: {
     display: 'flex',
