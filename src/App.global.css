@@ -86,9 +86,14 @@ a:hover {
 }
 
 .Header-Button button,
-.Menu-Button,
 .PlayTitleContainer,
 .PlayRestartButtonContainer {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.noSelect {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;

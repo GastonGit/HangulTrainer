@@ -4,7 +4,7 @@ import hangulChart from '../../assets/hangul-chart.png';
 const Practice = () => {
   return (
     <div>
-      <div className="Menu-Button">
+      <div className="noSelect">
         <img src={hangulChart} alt="Hangul alphabet" draggable="false" />
       </div>
     </div>
