@@ -148,6 +148,7 @@ a:hover {
 .PlayContainer {
   width: 177px;
   max-width: 177px;
+  min-height: 460px;
 }
 
 .PlayRestartButtonContainer {
