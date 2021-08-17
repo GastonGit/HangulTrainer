@@ -1,5 +1,4 @@
 import GameMode from './GameModeInterface';
-import characters from '../../../assets/hangul-characters.json';
 import Character from './HangulCharacterInterface';
 
 class HangulModes implements GameMode {
@@ -11,8 +10,8 @@ class HangulModes implements GameMode {
 
   currentCharacter: Character;
 
-  constructor() {
-    this.list = JSON.parse(JSON.stringify(characters));
+  constructor(list: Array<Character>) {
+    this.list = list;
     this.resetList = JSON.parse(JSON.stringify(this.list));
     this.currentIndex = 0;
     this.currentCharacter = this.list[this.currentIndex];
