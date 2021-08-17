@@ -2,7 +2,7 @@ import GameMode from './GameModeInterface';
 import characters from '../../../assets/hangul-characters.json';
 import Character from './HangulCharacterInterface';
 
-class HangulMode1 implements GameMode {
+class HangulModes implements GameMode {
   list: Array<Character>;
 
   resetList: Array<Character>;
@@ -51,4 +51,4 @@ class HangulMode1 implements GameMode {
   }
 }
 
-export default HangulMode1;
+export default HangulModes;
