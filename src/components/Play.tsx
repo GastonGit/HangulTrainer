@@ -109,7 +109,7 @@ class Play extends React.Component<unknown, PlayState> {
         </div>
         <form onSubmit={this.handleSubmit} className="PlayContent">
           <label htmlFor="answer" className="LabelContent">
-            <p className="CurrentHangul">{currentHangul}</p>
+            <p className="CurrentHangul noSelect">{currentHangul}</p>
             <input
               type="text"
               id="answer"
