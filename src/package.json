@@ -1,7 +1,7 @@
 {
   "name": "hangul-trainer",
   "productName": "HangulTrainer",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "A simple application for learning the korean alphabet: Hangul",
   "main": "./main.prod.js",
   "author": {
